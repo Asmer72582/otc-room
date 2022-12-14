@@ -1,0 +1,132 @@
+.container {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+body {
+	background-image: url('jGlzr.png');
+
+}
+
+.container::before {
+	content: 'One ti';
+	position: absolute;
+	font-weight: 900;
+	transform: rotateX(40deg);
+	left: 180px;
+	font-size: 82px;
+}
+
+.container::after {
+	content: 'me Chat';
+	position: absolute;
+	right: 100px;
+	font-weight: 900;
+	font-size: 82px;
+	z-index: -10;
+}
+
+.messages_container {
+	width: 600px;
+	height: 600px;
+	position: relative;
+	border: 2px solid #075249;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+.messages {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background-color: #e7e7e7;
+	overflow-y: scroll;
+}
+
+.join_message {
+	align-self: center;
+	width: fit-content;
+	background-color: #54c2e7;
+	padding: 5px 20px;
+	border-radius: 5px;
+	margin: 3px 0;
+}
+
+.sent_message_container {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-end;
+	width: fit-content;
+	background-color: #9df6be;
+	padding: 5px 20px;
+	border-radius: 5px;
+	margin: 3px 0;
+}
+
+.your_name {
+	margin: 0;
+	font-size: 13px;
+	padding-bottom: 4px;
+	font-weight: bold;
+	color: #fa3d03;
+}
+
+.sent_message {
+	margin: 0;
+}
+
+.receive_message_container {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	width: fit-content;
+	background-color: white;
+	padding: 5px 20px;
+	border-radius: 5px;
+	margin: 3px 0;
+}
+
+.receiver_name {
+	margin: 0;
+	font-size: 13px;
+	padding-bottom: 4px;
+	font-weight: bold;
+	color: #5761f6;
+}
+
+.receive_message {
+	margin: 0;
+}
+
+.input_container {
+	display: flex;
+	width: 100%;
+}
+
+.input {
+	flex: 1;
+	height: 40px;
+	font-size: 16px;
+	outline: none;
+	border: none;
+	padding: 0 10px;
+	/* border-top: 2px solid #09e5cc; */
+}
+
+.btn {
+	width: 100px;
+	background-color: #000000;
+	color: white;
+	outline: none;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
