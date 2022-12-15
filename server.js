@@ -21,7 +21,7 @@ app.use(express.static(__dirname + "/public"));
 const io = new Server(httpServer);
 onSocket(io);
 
-const random = Math.floor(Math.random() * 9999 + 1000);
+const random = Math.floor(Math.random() * 9000 + 1000);
 
 console.log(random);
 const port = process.env.PORT || random;
