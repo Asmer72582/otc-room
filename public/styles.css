@@ -21,6 +21,7 @@ body {
 	transform: rotateX(40deg);
 	left: 180px;
 	font-size: 82px;
+	z-index: -10;
 }
 
 .container::after {
